@@ -8,7 +8,7 @@ local users = {
 }
 
 
-local function checkPremium(userid)
+function checkPremium(userid)
 	for rank, tbl in next, users do
 		for id, state in next, tbl do
 			if id == userid then
